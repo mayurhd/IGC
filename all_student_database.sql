@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 14, 2018 at 10:10 AM
+-- Generation Time: Jan 14, 2018 at 10:37 AM
 -- Server version: 10.1.13-MariaDB
 -- PHP Version: 5.6.23
 
@@ -39,9 +39,8 @@ CREATE TABLE `all_student_database` (
 --
 
 INSERT INTO `all_student_database` (`name`, `class`, `roll`, `password`, `gpa`) VALUES
-('Mayur', 'te_it_sem_5', 1414084, 'mayur@123', NULL),
-('Rohit Sharma', 'TE_IT_SEM_6', 1414120, 'Rohit@123', '8.86'),
-('Bhagat Singh', 'se_it_sem_3', 1431432, 'bhagat@123', '0');
+('Virat', 'te_it_sem_6', 147147, '5ff64943c820b87f78771760431e8bb2', NULL),
+('Mayur', 'te_it_sem_5', 147741, 'b47646a52111af775c12716564f37561', NULL);
 
 --
 -- Indexes for dumped tables

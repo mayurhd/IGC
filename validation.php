@@ -11,7 +11,7 @@ if(isset($_POST['signup']))
 		$name = mysql_real_escape_string($_POST['name']);
 		$class = mysql_real_escape_string($_POST['list']);
 		
-		$password = mysql_real_escape_string($_POST['password']);
+		$password = mysql_real_escape_string(md5($_POST['password']));
 
 		if(mysql_query("INSERT INTO all_student_database (name,class,roll,password) VALUES('$name','$class','$roll','$password')"))
 		{
@@ -39,7 +39,7 @@ if (isset($_POST['signin']))
 		$res=mysql_query("SELECT * FROM all_student_database WHERE roll='$roll_login'");
 		$row=mysql_fetch_array($res);
 		
-		if($row['password']==$password_login)
+		if($row['password']==md5($password_login))
 		{
 			$_SESSION['user'] = $row['roll'];
 			$class = $row['class'];
