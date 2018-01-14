@@ -7,7 +7,7 @@
 
 ## Note:
 
-Only sem 5 and sem 6 is in use. Do register with these 2 classes only.
+Only sem 5 and sem 6 is in use. Register only with these 2 classes only.
 
 ## Database name: 
 
